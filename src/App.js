@@ -19,15 +19,15 @@ const App = () => {
 
     //getupdate hours 
     var newhour=new Date().getHours() % 12;
-    newhour=newhour <10 ? "0"+newhour : newhour;
+    newhour=newhour < 10 ? "0"+newhour : newhour;
 
     //getupdate minutes
     var newminutes=new Date().getMinutes();
-    newminutes=newminutes <10 ? "0"+newminutes : newminutes;
+    newminutes=newminutes < 10 ? "0"+newminutes : newminutes;
 
     //getupdate seconds
     var newseconds=new Date().getSeconds();
-    newseconds=newseconds <10 ? "0"+newseconds : newseconds;
+    newseconds=newseconds < 10 ? "0"+newseconds : newseconds;
 
     //push the variable in setState
 
