@@ -15,7 +15,7 @@ const App = () => {
 
   const updatetime=()=>{
     //get AM or PM
-    var newampm=new Date().getHours() > 12 ? "PM":"AM";
+    var newampm=new Date().getHours() >= 12 ? "PM":"AM";
 
     //getupdate hours 
     var newhour=new Date().getHours() % 12 ;
