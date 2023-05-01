@@ -18,7 +18,7 @@ const App = () => {
     var newampm=new Date().getHours() > 12 ? "PM":"AM";
 
     //getupdate hours 
-    var newhour=new Date().getHours() ;
+    var newhour=new Date().getHours() % 12 ;
     newhour=newhour < 10 ? "0"+newhour : newhour;
 
     //getupdate minutes
@@ -37,7 +37,7 @@ const App = () => {
     setAmPm(newampm);
   }
 
-  setInterval(updatetime,500);
+  setInterval(updatetime,1000);
 
   
 
