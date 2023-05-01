@@ -18,7 +18,7 @@ const App = () => {
     var newampm=new Date().getHours() > 12 ? "PM":"AM";
 
     //getupdate hours 
-    var newhour=new Date().getHours() %12;
+    var newhour=new Date().getHours() % 12;
     newhour=newhour <10 ? "0"+newhour : newhour;
 
     //getupdate minutes
